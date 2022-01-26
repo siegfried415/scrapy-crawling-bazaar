@@ -28,9 +28,6 @@ logging.basicConfig(
     level=logging.INFO
 )
 
-#NOTE,NOTE,NOTE 
-gcb_path = "/home/wyong/scrapy-crawling-bazaar/example-project/gcb" 
-
 def get_gcb_api_url(repo) :
     try: 
         with open( repo + "/api", 'r')  as f :
@@ -119,6 +116,8 @@ def crawl(runner, cls, name, repo_name ) :
 
 if __name__ == "__main__": 
         runner=CrawlerRunner()
+
+	gcb_path = os.path.abspath(os.path.join(os.getcwd(), "gcb"))
         for i in range(0, 10): 
             crawl(runner, CrawlerSpider, "crawler{}".format(i), "{}/node_miner_{}".format(gcb_path,i))
         crawl(runner, ClientSpider, "client", "{}/node_c".format(gcb_path))

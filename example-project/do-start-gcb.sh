@@ -7,11 +7,10 @@ StopAllDaemons()
 StopAllDaemons
 sleep 5 
 
-gcb="/home/wyong/go-crawling-bazaar/bin/gcb"
 StartDaemon()
 {
 	echo "start $2 daemon with repo $1 and log $1/daemon.log ..."
-	$gcb --repodir $1 --log-level debug --role $2 daemon > "$1/daemon.log" 2>&1 
+	gcb --repodir $1 --log-level debug --role $2 daemon > "$1/daemon.log" 2>&1 
 	sleep 5 
 }
 

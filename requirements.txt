@@ -1,0 +1,4 @@
+# This packages are required to install and run our package.
+Scrapy>=2.5.1
+setuptools>=39.0.1
+treq>=21.5.0 

@@ -1,0 +1,4 @@
+Scrapy>=2.5.1
+scrapy_crawling_bazaar>=0.0.1.dev0
+scrapy-link-filter>=0.2.0
+Twisted>=21.7.0
