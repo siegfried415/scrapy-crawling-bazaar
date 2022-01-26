@@ -1,0 +1,156 @@
+UseTestMasterKey: true
+WorkingRoot: ./
+PubKeyStoreFile: public.keystore
+PrivateKeyFile: private.key
+WalletAddress: ac649f141a45f7b6175ad2e8fd7ae4197bc5da3ee521a029000bbd32ab44a632
+DHTFileName: dht.db
+ListenAddr: /ip4/127.0.0.1/tcp/11107
+PublicRelayAddress: ""
+AdapterAddr: /ip4/127.0.0.1/tcp/7790
+datastore:
+  type: badgerds
+  path: badger
+ThisNodeID: 16Uiu2HAmEguuMg9jERd6bhEMPWBYam93WVAz2JbA5EWZjhH1kDNG
+ValidDNSKeys:
+  koPbw9wmYZ7ggcjnQ6ayHyhHaDNMYELKTqT+qRGrZpWSccr/lBcrm10Z1PuQHB3Azhii+sb0PYFkH1ruxLhe5g==: cloudflare.com
+  mdsswUyr3DPW132mOi8V9xESWE8jTo0dxCjjnopKl+GqJxpVXckHAeF+KkxLbxILfDLUT0rAK9iUzy1L53eKGQ==: cloudflare.com
+  oJMRESz5E4gYzS/q6XDrvU1qMPYIjCWzJaOau8XNEZeqCYKD5ar0IRd8KqXXFJkqmVfRvMGPmM1x8fGAa2XhSA==: cloudflare.com
+MinNodeIDDifficulty: 0
+DNSSeed:
+  EnforcedDNSSEC: false
+  DNSServers: []
+  Domain: ""
+  PBCount: 0
+Presbyterian:
+  PublicKey: 02e50c4195e43f09079a2e0c43cdd27c21a99f27c5b0690d25621d7de6b91d99ee
+  NodeID: 16Uiu2HAmAqnBXGYTE9GYLvn5McTiqjbto5Xu1bbFC6CEjovpGRWM
+  Nonce:
+    a: 313283
+    b: 0
+    c: 0
+    d: 0
+  ChainFileName: chain.db
+  PBGenesisInfo:
+    Version: 1
+    Timestamp: 2018-08-13T21:59:59.12Z
+    BaseAccounts:
+    - Address: beda6f4a0e6dc88eeb518681d14fc758f17f56cd28452cda176ca845e05a9568
+      StableCoinBalance: 100000000000000000
+      CovenantCoinBalance: 100000000000000000
+    - Address: 47695592e9c90ea9bdd326ae3d346f5143cdcae11c466e76f1d2a418fe99d056
+      StableCoinBalance: 100000000000000000
+      CovenantCoinBalance: 100000000000000000
+    - Address: 2e8a712723bac3e2e1cd1db73d75ed86a95ba67aac9116d2c022b3caa98a2b5d
+      StableCoinBalance: 100000000000000000
+      CovenantCoinBalance: 100000000000000000
+    - Address: c4272b859a3522fa3c3ee5fa17c2139913687b13d035a2d9f9c52d412351d504
+      StableCoinBalance: 100000000000000000
+      CovenantCoinBalance: 100000000000000000
+    - Address: 2ac4715b3e2f18174473303abd04d857c289ad67587ffcb761d0b73c26bcb282
+      StableCoinBalance: 100000000000000000
+      CovenantCoinBalance: 100000000000000000
+    - Address: 12eb22c0530d0efbcf1220eb553d173d4929e5f30723531337587f7bf525ad90
+      StableCoinBalance: 100000000000000000
+      CovenantCoinBalance: 100000000000000000
+    - Address: f827602f2cd95b1b1e28e1fa3fda05050679516c5ce84d7d42e5f5ce06d8124a
+      StableCoinBalance: 100000000000000000
+      CovenantCoinBalance: 100000000000000000
+    - Address: 2ee5a0d423ac01d83ea7941f3a6e6a870e76a8943d26c9dd634ef0cd3f2876b8 
+      StableCoinBalance: 100000000000000000
+      CovenantCoinBalance: 100000000000000000
+    - Address: 2e433b5b17c2509bbff4037657958e83028946c2165d01bcaccc5d63c4efd5d1
+      StableCoinBalance: 100000000000000000
+      CovenantCoinBalance: 100000000000000000
+    - Address: ac649f141a45f7b6175ad2e8fd7ae4197bc5da3ee521a029000bbd32ab44a632 
+      StableCoinBalance: 100000000000000000
+      CovenantCoinBalance: 100000000000000000
+    - Address: 291684bc5cd754d7ab5731d4f85f8e1ed35b3f7a73271e846fc0b09b5aed11b9 
+      StableCoinBalance: 100000000000000000
+      CovenantCoinBalance: 100000000000000000
+    - Address: 5917815d13dc97d4b51486ca8995be8f3a008289d0e2fef9f95420010f419bc6
+      StableCoinBalance: 100000000000000000
+      CovenantCoinBalance: 100000000000000000
+    - Address: 4e404f9ebe33d037c47c3bc5888a95d663e7b23b56d605d8c0a51d2527d8c13d 
+      StableCoinBalance: 100000000000000000
+      CovenantCoinBalance: 100000000000000000
+    - Address: 4e7a2f7afe6c982cb87122a1d4525aec2cbfa7c73559fdc305fec126477f44ac 
+      StableCoinBalance: 100000000000000000
+      CovenantCoinBalance: 100000000000000000
+    - Address: 9bd3c8903c3c5691ac04efb21dc981d0594cf171b99884a7ed65e36bdb55db00 
+      StableCoinBalance: 100000000000000000
+      CovenantCoinBalance: 100000000000000000
+
+Miner:
+  RootDir: ./data
+  MaxReqTimeGap: 2s
+  ProvideServiceInterval: 3s
+KnownNodes:
+- ID: 16Uiu2HAmAqnBXGYTE9GYLvn5McTiqjbto5Xu1bbFC6CEjovpGRWM
+  Role: Leader
+  Addr: /ip4/127.0.0.1/tcp/11099/p2p/16Uiu2HAmAqnBXGYTE9GYLvn5McTiqjbto5Xu1bbFC6CEjovpGRWM
+  PublicKey: 02e50c4195e43f09079a2e0c43cdd27c21a99f27c5b0690d25621d7de6b91d99ee
+- ID: 16Uiu2HAmUiEJVgYqFcvi6GB15Ddpkn5rpATDsuMbGCSdaJRaDND7
+  Role: Follower
+  Addr: /ip4/127.0.0.1/tcp/11100/p2p/16Uiu2HAmUiEJVgYqFcvi6GB15Ddpkn5rpATDsuMbGCSdaJRaDND7
+  PublicKey: 03ee8f8234eb77bbd79abdc360bb47e697d85eb5756fc05b1d8739489376433d62
+- ID: 16Uiu2HAmFX42Q8b5kLAD3X7c4bqUvk9bd3mGR4p7ow9zRsujZzdy
+  Role: Follower
+  Addr: /ip4/127.0.0.1/tcp/11101/p2p/16Uiu2HAmFX42Q8b5kLAD3X7c4bqUvk9bd3mGR4p7ow9zRsujZzdy
+  PublicKey: 032a8a91a0a4f507ffb1de91d7a739949b95c458833111e85729b17e765e78e904
+- ID: 16Uiu2HAmLhB7D83PGVCjTAzLZyNza5pnSoeqkwiXfxkmLvLioUBu
+  Role: Client
+  Addr: ""
+  PublicKey: 03776cd1fdd177713e3a7f1607ff216102cc570316c2ebc4f1fbfe94e2ef3b73a4
+- ID: 16Uiu2HAmKAe11A3u7eQFyeHRNn2EFn3SBsqiEgH4iEV8PckdZzyd
+  Role: Miner
+  Addr: /ip4/127.0.0.1/tcp/11102/p2p/16Uiu2HAmKAe11A3u7eQFyeHRNn2EFn3SBsqiEgH4iEV8PckdZzyd
+  PublicKey: 0360be89497f69de47c3fa488c22d781b7e5c2cddf983807110ad8f235383b63b8
+- ID: 16Uiu2HAm8z5rbDsdcMXXTE5EJGj2pniaTQYHiKmGD57wEcHpPcU2
+  Role: Miner
+  Addr: /ip4/127.0.0.1/tcp/11103/p2p/16Uiu2HAm8z5rbDsdcMXXTE5EJGj2pniaTQYHiKmGD57wEcHpPcU2
+  PublicKey: 02c975832ced8dcd86cfe435a172c8fca69a2fb703cb4afe71fc3de15e881a06ab
+- ID: 16Uiu2HAmFpJ9xZ9zzR41zi4ccDRq2owNPPL649umzm3dp7XdKF2y
+  Role: Miner
+  Addr: /ip4/127.0.0.1/tcp/11104/p2p/16Uiu2HAmFpJ9xZ9zzR41zi4ccDRq2owNPPL649umzm3dp7XdKF2y
+  PublicKey: 032ef56b79a08b2c8adc591132fd0e623b239c38494d12dda4ebe1af89f3f2913a
+- ID: 16Uiu2HAkxT5C8y1EBwS2wngCeHUwhLdxcQHPF25HSCBAriPpQr9R
+  Role: Miner 
+  Addr: /ip4/127.0.0.1/tcp/11105/p2p/16Uiu2HAkxT5C8y1EBwS2wngCeHUwhLdxcQHPF25HSCBAriPpQr9R
+  PublicKey: 022ceee3700ad18cfefb69f95df78779bf0bfc6f09539d470f31b94cb6903844d4
+- ID: 16Uiu2HAmKjXMDPnrZ8xVhUb1MnAhCLaiqNgYkZ7C7xbtv3USAzds
+  Role: Miner
+  Addr: /ip4/127.0.0.1/tcp/11106/p2p/16Uiu2HAmKjXMDPnrZ8xVhUb1MnAhCLaiqNgYkZ7C7xbtv3USAzds
+  PublicKey: 03692b2e9bab65a3e1c16ef96e2840b1abc6a5dbd14a2c7a296aedc42a58924b36
+- ID: 16Uiu2HAmEguuMg9jERd6bhEMPWBYam93WVAz2JbA5EWZjhH1kDNG
+  Role: Miner
+  Addr: /ip4/127.0.0.1/tcp/11107/p2p/16Uiu2HAmEguuMg9jERd6bhEMPWBYam93WVAz2JbA5EWZjhH1kDNG
+  PublicKey: 031e3581d186de07aff2887b95c76f32c045f9e220d96ba803e9c7e03dab026a39
+- ID: 16Uiu2HAmG5Pxp6ynJUfoZ4YM1QNUHQnmnJUVQM9ED8Y7nVg4WuVP
+  Role: Miner 
+  Addr: /ip4/127.0.0.1/tcp/11108/p2p/16Uiu2HAmG5Pxp6ynJUfoZ4YM1QNUHQnmnJUVQM9ED8Y7nVg4WuVP
+  PublicKey: 0332d3b2eaf9f10499cc15141b27d864f572ce001ece4bdf512cd6fe21d1c19a56
+- ID: 16Uiu2HAmKs43sSEfjHsqeQbtkmmEh1s7pB6HpGGVLZ2NpvT8hmqR
+  Role: Miner 
+  Addr: /ip4/127.0.0.1/tcp/11109/p2p/16Uiu2HAmKs43sSEfjHsqeQbtkmmEh1s7pB6HpGGVLZ2NpvT8hmqR
+  PublicKey: 036b18f61f68cbfbc7648f246606cf2a54ecf292d06b634c95b8c0b7e0a77250d8
+- ID: 16Uiu2HAmHWXnvvScWoJuTg8FJrDmkEAproAg95JpRXYVSPtsGG5m
+  Role: Miner  
+  Addr: /ip4/127.0.0.1/tcp/11110/p2p/16Uiu2HAmHWXnvvScWoJuTg8FJrDmkEAproAg95JpRXYVSPtsGG5m
+  PublicKey: 03481fc24f52f53d4f7dd9daea5f7fe96549151c8c898883da9e3b4b2a1019c488
+- ID: 16Uiu2HAmE1pwA6zLXftujHowCqTMjSwbr7x4kR3f6Sh4MHrZjWXj
+  Role: Miner
+  Addr: /ip4/127.0.0.1/tcp/11111/p2p/16Uiu2HAmE1pwA6zLXftujHowCqTMjSwbr7x4kR3f6Sh4MHrZjWXj
+  PublicKey: 0314323cb4aa153cce21d33e9c3ad4a66ab9e2aba32953be84c9987b2560c1093a
+- ID: 16Uiu2HAmHe2PiUiE9aqxeZGgAdkjpJANwbuABYQHZBknF9oX13pJ
+  Role: Miner
+  Addr: /ip4/127.0.0.1/tcp/11112/p2p/16Uiu2HAmHe2PiUiE9aqxeZGgAdkjpJANwbuABYQHZBknF9oX13pJ
+  PublicKey: 034a0b299b4cf201dada60e0d2ca6256f32daff7f3204a728b11b091326ef4e79f
+QPS: 1000
+ChainBusPeriod: 20s
+BillingBlockCount: 60
+PBPeriod: 3s
+PBTick: 1s
+SQLChainPeriod: 3s
+SQLChainTick: 1s
+SQLChainTTL: 10
+MinProviderDeposit: 1000000
