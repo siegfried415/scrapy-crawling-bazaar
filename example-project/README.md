@@ -4,14 +4,14 @@ example-crawling-bazaar
 ------------------------------------------------
 example-crawlinb-bazaar是一个使用scrapy-crawling-bazaar中提供的Spider Class和Middlewares制作的去中心化爬虫的例子，为了运行该例子，需要进行如下步骤：
 
-1) 配置http服务器
+## 配置http服务器
 为了简化安装和设置，我们使用[simple-mock-server](https://github.com/jonathadv/simple-mock-server)作为http服务器,该服务器非常简单，无需使用pip install安装即可使用。
 
 ```shell
 ~/simple-mock-server/src/server.py -f ./mock-server/mock-server.json
 ```
 
-2) 启动gcb进程
+## 启动gcb进程
 在example-project目录下面，提供了一个do-start-gcb.sh脚本，在该脚本中，定义启动gcb的函数StartDaemon，该函数包含两个参数，一个是repo路径，一个是角色：
 
 ```bash
@@ -46,7 +46,7 @@ done
 StartDaemon "./gcb/node_c" "Client" &
 ```
 
-3) 启动Scrapy爬虫
+## 启动Scrapy爬虫
 每个Crawler Miner都要启动一个运行CrawlerSpider类的Scrapy实例, 这个CrawlerSpider类是从CrawlingBazaarCrawlSpider派生的爬虫类，这个爬虫类中不包含start_urls，这意味着CrawlerSpider只是被动地等待go-crawling-bazaar网络中派发的url request，而没有自己特有的爬取目标。
 
 为了在一个进程中启动多个爬虫，我们使用了Scrapy提供的CrawlerRunner:
